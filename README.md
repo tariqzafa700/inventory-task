@@ -15,6 +15,10 @@ mvn spring-boot:run
 
 `@PostMapping("/buy")`
 
+`/buy` endpoint is protected by basic authentication with base64 encrypted password. Id is `tariq` and password is `gilded-roses`.
+
+Can also add API key for additional security. Have some sample code in a separate branch `api-key-addition` but that hasn't been tested yet.
+
 
 Sample body
 contains items to buy with quantities requested and total money provided
