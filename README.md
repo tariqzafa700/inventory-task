@@ -7,12 +7,20 @@ mvn clean install
 mvn spring-boot:run
 
 ## Endpoints
-@GetMapping("/inventory")
-@GetMapping("/inventory/{item-id}")
-@PostMapping("/buy")
+`@GetMapping("/inventory")`
+
+
+`@GetMapping("/inventory/{item-id}")`
+
+
+`@PostMapping("/buy")`
+
+
 Sample body
 contains items to buy with quantities requested and total money provided
-{
+
+
+`{
     "requestedItems": [
         {
             "id": 1,
@@ -24,10 +32,14 @@ contains items to buy with quantities requested and total money provided
         }
     ],
     "money": "40"
-}
+}`
+
+
 Sample response
 contains items' information with quantities secured and money left.
-{
+
+
+`{
     "requestedItems": [
         {
             "id": 1,
@@ -43,12 +55,14 @@ contains items' information with quantities secured and money left.
         }
     ],
     "money": "20"
-}
+}`
 
 Config used for testing purpose
 application.properties
-app.surge.pricing.duration.ms=60000 // time period in milliseconds within which number of requests exceed the surge threshold.
-app.calls.surge.call.limit=3 // number of calls to decide a surge.
+
+
+`app.surge.pricing.duration.ms=60000 // time period in milliseconds within which number of requests exceed the surge threshold.`
+`app.calls.surge.call.limit=3 // number of calls to decide a surge.`
 
 Surge logic:
 1. First call for a product is made through `/inventory/{id}` is made at 12 pm with price $10.00.
