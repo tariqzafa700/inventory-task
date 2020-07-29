@@ -62,6 +62,7 @@ application.properties
 
 
 `app.surge.pricing.duration.ms=60000 // time period in milliseconds within which number of requests exceed the surge threshold.`
+
 `app.calls.surge.call.limit=3 // number of calls to decide a surge.`
 
 Surge logic:
