@@ -1,0 +1,13 @@
+{
+	"requestedItems": [
+		{
+			"id": 1,
+			"quantity": 4
+		},
+		{
+			"id": 2,
+			"quantity": 3
+		}
+	],
+	"money": "40"
+}

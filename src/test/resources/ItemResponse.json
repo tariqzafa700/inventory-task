@@ -1,0 +1,17 @@
+{
+	"requestedItems": [
+		{
+			"id": 1,
+			"quantity": 4,
+			"name": "Chips",
+			"price": "3.40"
+		},
+		{
+			"id": 2,
+			"quantity": 3,
+			"name": "Fish",
+			"price": "7.80"
+		}
+	],
+	"money": "40"
+}
